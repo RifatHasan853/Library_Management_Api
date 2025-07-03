@@ -77,3 +77,20 @@ MONGO_URI=mongodb://127.0.0.1:27017/library
 ```
 npm run dev
 ```
+## 🗂️ API Endpoints
+### 📖 Book Endpoints
+```
+| Method | Endpoint             | Description                                 |
+| ------ | -------------------- | ------------------------------------------- |
+| POST   | `/api/books`         | Create a new book                           |
+| GET    | `/api/books`         | Get all books (filter/sort/limit supported) |
+| GET    | `/api/books/:bookId` | Get a specific book by ID                   |
+| PUT    | `/api/books/:bookId` | Update a book by ID                         |
+| DELETE | `/api/books/:bookId` | Delete a book by ID                         |
+```
+### Query Parameters for `GET /api/books`
+
+- `filter` → Filter by genre (e.g., `"FICTION"`)
+- `sortBy` → Field to sort by (default: `"createdAt"`)
+- `sort` → `"asc"` or `"desc"` (default: `"asc"`)
+- `limit` → Number of results to return (default: `10`)
