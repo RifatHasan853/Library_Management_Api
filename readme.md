@@ -50,3 +50,30 @@ A RESTful API for managing library books and borrow records using **Node.js**, *
 ├── .env
 └── README.md
 ```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```
+git clone <your-repo-url>
+cd <your-project-folder>
+```
+### 2. Install Dependencies
+```
+npm install
+```
+### 3. Set Up Environment Variables
+
+Create a .env file in the root directory:
+```
+env
+PORT=5000
+MONGO_URI=mongodb://127.0.0.1:27017/library
+```
+### 4. Run the Application
+```
+npm run dev
+```
